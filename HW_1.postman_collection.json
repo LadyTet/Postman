@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "46445d9a-adc4-4cce-a882-045f7088656f",
+		"name": "HW_1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21757378"
+	},
+	"item": [
+		{
+			"name": "/get_method",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip_port2}}/get_method?name=Tanya&age=38",
+					"host": [
+						"{{ip_port2}}"
+					],
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tanya"
+						},
+						{
+							"key": "age",
+							"value": "38"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user_info_3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Tanya",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "38",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "5000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{ip_port2}}/user_info_3",
+					"host": [
+						"{{ip_port2}}"
+					],
+					"path": [
+						"user_info_3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user_info_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Tanya",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "38",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "1000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{ip_port2}}/user_info_2",
+					"host": [
+						"{{ip_port2}}"
+					],
+					"path": [
+						"user_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tetiana",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "38",
+							"disabled": true
+						},
+						{
+							"key": "salary",
+							"value": "1000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/object_info_1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip_port2}}/object_info_1?name=Tanya&age=38&weight=62",
+					"host": [
+						"{{ip_port2}}"
+					],
+					"path": [
+						"object_info_1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tanya"
+						},
+						{
+							"key": "age",
+							"value": "38"
+						},
+						{
+							"key": "weight",
+							"value": "62"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/object_info_2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip_port2}}/object_info_2?name=Tanya&age=38&salary=15000",
+					"host": [
+						"{{ip_port2}}"
+					],
+					"path": [
+						"object_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tanya"
+						},
+						{
+							"key": "age",
+							"value": "38"
+						},
+						{
+							"key": "salary",
+							"value": "15000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/object_info_3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip_port2}}/object_info_3?name=Tanya&age=38&salary=100000",
+					"host": [
+						"{{ip_port2}}"
+					],
+					"path": [
+						"object_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tanya"
+						},
+						{
+							"key": "age",
+							"value": "38"
+						},
+						{
+							"key": "salary",
+							"value": "100000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/object_info_4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip_port2}}/object_info_4?name=Tanya&age=38&salary=100000",
+					"host": [
+						"{{ip_port2}}"
+					],
+					"path": [
+						"object_info_4"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tanya"
+						},
+						{
+							"key": "age",
+							"value": "38"
+						},
+						{
+							"key": "salary",
+							"value": "100000"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	]
+}
